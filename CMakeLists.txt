@@ -51,6 +51,7 @@ SET(GLUT_SOURCE_DIR CACHE PATH "Path where to find GLUT source")
 SET(GIFLIB_SOURCE_DIR CACHE PATH "Path where to find GIFLIB source")
 SET(MINIZIP_SOURCE_DIR CACHE PATH "Path where to find MINIZIP source")
 SET(CURL_SOURCE_DIR CACHE PATH "Path where to find Curl source")
+SET(PLIB_SOURCE_DIR CACHE PATH "Path where to find PLIB source")
 
 # Check dependencies for LIBPNG
 IF (LIBPNG_SOURCE_DIR)
@@ -112,4 +113,8 @@ ENDIF()
 
 IF (CURL_SOURCE_DIR)
 	ADD_SUBDIRECTORY(curl)
+ENDIF()
+
+IF (PLIB_SOURCE_DIR)
+	ADD_SUBDIRECTORY(plib)
 ENDIF()
