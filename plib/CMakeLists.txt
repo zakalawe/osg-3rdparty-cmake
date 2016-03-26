@@ -18,6 +18,7 @@ SET(JS_PUBLIC_HEADERS
 )
 
 SET(JS_SRCS
+		${PLIB_SOURCE_DIR}/src/js/js.cxx
 		${PLIB_SOURCE_DIR}/src/js/jsWindows.cxx
 )
 
